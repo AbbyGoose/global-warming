@@ -4,11 +4,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #a14b11;        /* цвет зоны отслеживания */
+    background: #db6d24;        /* цвет зоны отслеживания */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #bd5814;    /* цвет бегунка */
+    background-color: #b85513;    /* цвет бегунка */
     border-radius: 20px;       /* округлось бегунка */
     border: none;
   }
@@ -17,19 +17,19 @@ body::-webkit-scrollbar {
 
 
 body {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
     background: url(https://avatars.mds.yandex.net/i?id=4c0516c3690b7bfff3a118528dced17e_l-4483283-images-thumbs&n=13);
     background-color: #a14b11;
-    color: #F8FAFC;
+    color: #090a0a;
 }
 
 h1 {
     margin: 4;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 60px;
     font-weight: 900;
     color: #ff0000;
@@ -37,16 +37,53 @@ h1 {
 }
 
 h2, p {
-    margin: 4;
-    color: #e09916;
+    line-height: 1;
+    max-width: 1000px;
+    margin: 20px auto 20px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+li {
+  line-height: 1;
+    max-width: 1000px;
+    margin: 20px auto 20px;
+    font-size: 25px;
+    color: #ffffff;
 }
 
 img {
     object-fit: contain;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
+.links__s {
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: #f28bd8;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.links__s::after {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 60%;
+  height: 1px;
+  bottom: -13px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
 }
